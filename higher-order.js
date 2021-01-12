@@ -21,12 +21,12 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
-let evenNumbers = mixedNumbers.filter(function(element, index, array){
-  if(element % 2 === 0){
-    return true
-  } 
-  return evenNumbers
-})
+function mixedNumbersArray(array){
+  return array.filter((element, index, array) => {
+    return element % 2 === 0
+  })
+}
+const evenNumbers = mixedNumbersArray(mixedNumbers)
 
 
 
@@ -71,7 +71,6 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 
 //Code Here
 let totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
-
 
 
 ////////// PROBLEM 4 //////////
@@ -133,6 +132,14 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal //Code Here
-
-
+// let bobsTotal //Code Here
+let bobsTotal = purchases
+.filter((element, index, array) => {
+  return element.owner === 'Bob'
+})
+.map((element, index, array) => {
+  return element.price 
+})
+.reduce((accumulator, element, index, array) => {
+  return accumulator + element
+},0)

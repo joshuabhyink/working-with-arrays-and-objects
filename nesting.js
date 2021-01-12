@@ -52,13 +52,7 @@ var employees = [
 
 //Code Here
 function employeeUpdater(){
-  for(let key in employees){
-    if(employees[i] = 'Theo'){
-      
-    } else if(employees[i] = 'Lorie'){
 
-    }
-  }
 }
 
 
@@ -77,11 +71,7 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-function removeDuplicates(array){
-  for(i = 0; i < array.length; i++){
-    if(i)
-  }
-}
+
 
 
 ////////// PROBLEM 3 //////////
@@ -109,13 +99,14 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+// var grumpyActivity;
+// var fluffy2ndFriend;
+let grumpyActivity = cat.catFriends[0].activities[1]
+let fluffy2ndFriend = cat.catFriends[1].name
 
 
 
 ////////// PROBLEM 4 //////////
-
 // Do not edit the code below.
 var myCar = {
   make: 'Toyota',
@@ -140,7 +131,6 @@ var myCar = {
   ]
 }
 // Do not edit the code above.
-
 /*
   Above is some information about my car. As you can see, I am not the best driver.
   I have caused a few accidents.
@@ -151,6 +141,10 @@ var myCar = {
 */
 
 //Code Here
+const recordCleaner = () => {
+  for(let i = 0; i < myCar.accidents.length; i++)
+    myCar.accidents[i].atFaultForAccident = false
+}
 
 
 
