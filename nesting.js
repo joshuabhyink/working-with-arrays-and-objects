@@ -51,7 +51,15 @@ var employees = [
 */
 
 //Code Here
+function employeeUpdater(){
+  for(let key in employees){
+    if(employees[i] = 'Theo'){
+      
+    } else if(employees[i] = 'Lorie'){
 
+    }
+  }
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -69,7 +77,11 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+function removeDuplicates(array){
+  for(i = 0; i < array.length; i++){
+    if(i)
+  }
+}
 
 
 ////////// PROBLEM 3 //////////

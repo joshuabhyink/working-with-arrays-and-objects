@@ -22,20 +22,24 @@ var carDetails = {
 */
 
 //Code Here
+const carDetails2 = [...carDetails]
 
 
 
 ////////// PROBLEM 2 //////////
 
+function greeting( obj ) {
 /*
   In the function below named greeting, it is receiving an object as a parameter. 
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+
   //Code Here
   
+const {firstName, lastName, title} = obj
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,8 +58,17 @@ function greeting( obj ) {
 */
 
 //Code Here
+let object = {
+  utah: 1,
+  california: 2, 
+  texas: 3, 
+  arizona: 4,
+}
 
-
+function totalPopulation(object){
+  const {utah, california, texas, arizona} =  object
+  return sum(object[value])
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -68,7 +81,15 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+const ingredientsObject = {
+  carb: '',
+  fat: '',
+  protein: '',
+}
+function ingredients(object){
+  const {carb, fat, protein} = ingredientsObject
+  return
+}
 
 
 ////////// PROBLEM 5 //////////
