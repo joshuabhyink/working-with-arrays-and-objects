@@ -51,9 +51,10 @@ var employees = [
 */
 
 //Code Here
-function employeeUpdater(){
+// function employeeUpdater(){
+//   for(let i = 0; i < employees.length; i++)
 
-}
+// }
 
 
 ////////// PROBLEM 2 //////////
@@ -71,7 +72,14 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+function removeDuplicates(array){
+  for(let i = 0; i < workplaceAccidents.length; i++){
+    for(let j = 0; j >= workplaceAccidents.length - 1; j--)
+    if(i === j){
+      return
+    }
+  }
+}
 
 
 ////////// PROBLEM 3 //////////
