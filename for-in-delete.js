@@ -40,9 +40,10 @@ for(var key in values) {
 
 function showValues(obj){
   //Code Here
+  let answer = '';
  for(let key in obj) {
-  
- }
+  answer += obj[key]
+ } return answer
 }
 
 ////////// PROBLEM 2 //////////

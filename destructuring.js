@@ -21,14 +21,14 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
-const carDetails2 = [...carDetails]
+let {color, make, model, year} = carDetails
 
 
 
 ////////// PROBLEM 2 //////////
 
-function greeting( obj ) {
+function greeting(obj){
+
 /*
   In the function below named greeting, it is receiving an object as a parameter. 
   Use object destructuring to save the object properties to new variables. 
@@ -58,17 +58,11 @@ const {firstName, lastName, title} = obj
 */
 
 //Code Here
-let object = {
-  utah: 1,
-  california: 2, 
-  texas: 3, 
-  arizona: 4,
+const totalPopulation = (object) => {
+  const {utah, california, texas, arizona} = object
+  return utah + california + texas + arizona
 }
 
-function totalPopulation(object){
-  const {utah, california, texas, arizona} =  object
-  return sum(object[value])
-}
 
 ////////// PROBLEM 4 //////////
 
@@ -81,14 +75,10 @@ function totalPopulation(object){
 */
 
 //Code Here
-const ingredientsObject = {
-  carb: '',
-  fat: '',
-  protein: '',
-}
+
 function ingredients(object){
-  const {carb, fat, protein} = ingredientsObject
-  return
+  const {carb, fat, protein} = object;
+  return [carb, fat, protein]
 }
 
 
@@ -107,6 +97,9 @@ function ingredients(object){
 */
 
 //Code Here
+function largeNumbers({first, second, third}){
+  return key
+}
 
 
 
@@ -119,5 +112,8 @@ function ingredients(object){
 */
 
 //Code Here
+function numberGroups({a, b, c}){
+  return 
+}
 
 

@@ -30,6 +30,7 @@ const productCopy = {...product}
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // code here
+let colorsCopy = [...colors]
 
 
 
@@ -45,8 +46,7 @@ function addNums(num1, num2, num3) {
 }
 
 // code here
-addNums(...numbers)
-const result = [...numbers]
+const result = addNums([...numbers])
 
 ////////// PROBLEM 4 //////////
 

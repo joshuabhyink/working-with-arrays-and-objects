@@ -51,10 +51,15 @@ var employees = [
 */
 
 //Code Here
-// function employeeUpdater(){
-//   for(let i = 0; i < employees.length; i++)
-
-// }
+function employeeUpdater(){
+  for(let i = 0; i < employees.length; i++) {
+      if([i].key.firstName = "Theo") {
+        delete key.firstName          
+      } else if([i].key.department = 'Lorie'){
+        return key.department = "HR"
+      }
+    }
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -75,7 +80,7 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 function removeDuplicates(array){
   for(let i = 0; i < workplaceAccidents.length; i++){
     for(let j = 0; j >= workplaceAccidents.length - 1; j--)
-    if(i === j){
+    if(workplaceAccidents[i] === workplaceAccidents[j]){
       return
     }
   }
@@ -172,5 +177,17 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
+function looper(){
+  for(let i = 0; i <= numsArr.length; i++){
+    for(let j = 0; j <= numsArr.length; j++){
+      if(i % 2 === 2){
+        numsArr.splice(i, 1, 'even')
+      } else {
+        numsArr.splice(j, 1, 'odd')
+      }
+      return numsArr
+    }
+  }
+}
 
 
